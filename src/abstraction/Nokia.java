@@ -1,6 +1,6 @@
 package abstraction;
 
-public class Nokia extends Phone {
+public class Nokia extends Phone implements Camera,WiFi{
 
     @Override
     public void call() {
@@ -9,6 +9,21 @@ public class Nokia extends Phone {
 
     @Override
     public void text() {
+
+    }
+
+    @Override
+    public void takesPhoto() {
+
+    }
+
+    @Override
+    public void recordVideo() {
+
+    }
+
+    @Override
+    public void connectToWiFi() {
 
     }
 }

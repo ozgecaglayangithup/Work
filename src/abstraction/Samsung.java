@@ -1,6 +1,6 @@
 package abstraction;
 
-public class Samsung extends Phone implements Camera{
+public class Samsung extends Phone implements Camera,WiFi{
 
  public Samsung(){}
 
@@ -28,5 +28,10 @@ public class Samsung extends Phone implements Camera{
     public void recordVideo() {
         System.out.println("Samsung way of recording video");
 
+    }
+
+    @Override
+    public void connectToWiFi() {
+        System.out.println("Samsung way of connecting to WiFi");
     }
 }
