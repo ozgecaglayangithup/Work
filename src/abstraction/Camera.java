@@ -2,8 +2,16 @@ package abstraction;
 
 public interface Camera {
 
-    public abstract void takesPhoto();
-    public abstract void recordVideo();
+    void takesPhoto();
+    void recordVideo();
+
+    public default void method1(){ // this is default method
+        System.out.println("This is a default method");
+    }
+
+    public static  void method2(){
+        System.out.println("This is a static method");
+    }
 
 
 
