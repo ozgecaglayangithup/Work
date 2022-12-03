@@ -27,6 +27,10 @@ public abstract class Phone {
    public abstract void call(); // created to be implemented by sub-classes
     public abstract void text();  // created to be implemented by sub-classes
 
+    public void rings(){
+        System.out.println("Phones rings");
+    }
+
 
     @Override
     public String toString() {

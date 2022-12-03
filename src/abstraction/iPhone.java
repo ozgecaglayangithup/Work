@@ -1,6 +1,6 @@
 package abstraction;
 
-public class iPhone extends Phone {
+public class iPhone extends Phone implements Camera {
 
    public iPhone(){};
 
@@ -16,5 +16,16 @@ public class iPhone extends Phone {
     @Override
     public void text() {
         System.out.println("iPhone way of text");
+    }
+
+    @Override
+    public void takesPhoto() {
+        System.out.println("iPhone way of taking photo");
+    }
+
+    @Override
+    public void recordVideo() {
+        System.out.println("iPhone way of recording video");
+
     }
 }
