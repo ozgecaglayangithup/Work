@@ -19,7 +19,7 @@ public class Company {
    private String address;
    private String phoneNumber;
 
-   public String getName() {
+    String getName() {
       return name;
    }
 
